@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/assets/css/cart.css">
+</head>
+<body>
+
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+       
+        <!-- Product #1 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+       
+          <div class="image">
+            <img src="item-1.png" alt="" />
+          </div>
+       
+          <div class="description">
+            <span>Black bag</span>
+            <span></span>
+            <span></span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">20 SAR</div>
+        </div>
+       
+        <!-- Product #2 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+       
+          <div class="image">
+            <img src="item-2.png" alt=""/>
+          </div>
+       
+          <div class="description">
+            <span>Black mug</span>
+            <span></span>
+            <span></span>
+            
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">$870</div>
+        </div>
+       
+        <!-- Product #3 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+       
+          <div class="image">
+            <img src="item-3.png" alt="" />
+          </div>
+       
+          <div class="description">
+            <span>Green bag</span>
+            <span></span>
+            <span></span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="minus.svg" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">$349</div>
+        </div>
+       <a type="button" id="buttonhome" href="/" style="background-color: green;">Home</button>
+      </div>
+      
+
+      <script type="text/javascript">
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+    
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+        </script>
+
+</body>
+</html>
